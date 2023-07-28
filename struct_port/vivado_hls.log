@@ -1,0 +1,127 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /usr/cots/xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw03.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Tue Jul 11 03:12:22 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/largermaps/struct_port'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-10] Opening and resetting project '/h/dnguye22/Documents/largermaps/struct_port/proj_struct_port'.
+INFO: [HLS 200-10] Adding design file 'struct_port.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'struct_port_test.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'result.golden.dat' to the project
+INFO: [HLS 200-10] Opening and resetting solution '/h/dnguye22/Documents/largermaps/struct_port/proj_struct_port/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../struct_port_test.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw03.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Tue Jul 11 03:12:29 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/largermaps/struct_port/proj_struct_port/solution1/csim/build'
+../../../../struct_port_test.c:117:17: warning: format specifies type 'int' but the argument has type 'double' [-Wformat]
+  fprintf(fp, "%d   %d\n", d_oval.A, d_opt.A);
+               ~^          ~~~~~~~~
+               %f
+../../../../struct_port_test.c:117:22: warning: format specifies type 'int' but the argument has type 'double' [-Wformat]
+  fprintf(fp, "%d   %d\n", d_oval.A, d_opt.A);
+                    ~^               ~~~~~~~
+                    %f
+../../../../struct_port_test.c:119:19: warning: format specifies type 'int' but the argument has type 'double' [-Wformat]
+    fprintf(fp, "%d   %d\n", d_oval.B[i], d_opt.B[i]);
+                 ~^          ~~~~~~~~~~~
+                 %f
+../../../../struct_port_test.c:119:24: warning: format specifies type 'int' but the argument has type 'double' [-Wformat]
+    fprintf(fp, "%d   %d\n", d_oval.B[i], d_opt.B[i]);
+                      ~^                  ~~~~~~~~~~
+                      %f
+4 warnings generated.
+../../../../struct_port_test.c:117:17: warning: format specifies type 'int' but the argument has type 'double' [-Wformat]
+  fprintf(fp, "%d   %d\n", d_oval.A, d_opt.A);
+               ~^          ~~~~~~~~
+               %f
+../../../../struct_port_test.c:117:22: warning: format specifies type 'int' but the argument has type 'double' [-Wformat]
+  fprintf(fp, "%d   %d\n", d_oval.A, d_opt.A);
+                    ~^               ~~~~~~~
+                    %f
+../../../../struct_port_test.c:119:19: warning: format specifies type 'int' but the argument has type 'double' [-Wformat]
+    fprintf(fp, "%d   %d\n", d_oval.B[i], d_opt.B[i]);
+                 ~^          ~~~~~~~~~~~
+                 %f
+../../../../struct_port_test.c:119:24: warning: format specifies type 'int' but the argument has type 'double' [-Wformat]
+    fprintf(fp, "%d   %d\n", d_oval.B[i], d_opt.B[i]);
+                      ~^                  ~~~~~~~~~~
+                      %f
+4 warnings generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/21587861689059549937937
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../struct_port.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw03.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Tue Jul 11 03:12:39 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/largermaps/struct_port/proj_struct_port/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/21589171689059559576949
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Files result.dat and result.golden.dat differ
+Test failed  !!!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'struct_port.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 2814 ; free virtual = 8319
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 2814 ; free virtual = 8319
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 2813 ; free virtual = 8318
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 2813 ; free virtual = 8318
+INFO: [XFORM 203-102] Automatically partitioning small array 'o_val.B' (struct_port.c:101) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'o_val.B' (struct_port.c:101) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 2797 ; free virtual = 8302
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 2797 ; free virtual = 8302
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'struct_port' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'struct_port' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 38.75 seconds; current allocated memory: 102.950 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 103.247 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'struct_port' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'struct_port/agg_result_A' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'struct_port/agg_result_B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'struct_port/i_val_A' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'struct_port/i_val_B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'struct_port/i_pt_A' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'struct_port/i_pt_B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'struct_port/o_pt_A' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'struct_port/o_pt_B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'struct_port' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'struct_port_dadd_64ns_64ns_64_5_full_dsp_1' to 'struct_port_dadd_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'struct_port_dadd_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'struct_port'.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 103.778 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 286.53 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1167.988 ; gain = 523.035 ; free physical = 2794 ; free virtual = 8301
+INFO: [VHDL 208-304] Generating VHDL RTL for struct_port.
+INFO: [VLOG 209-307] Generating Verilog RTL for struct_port.
+INFO: [HLS 200-112] Total elapsed time: 41.53 seconds; peak allocated memory: 103.778 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Tue Jul 11 03:13:02 2023...

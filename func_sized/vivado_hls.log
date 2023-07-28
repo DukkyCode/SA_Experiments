@@ -1,0 +1,232 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /usr/cots/xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw00.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Fri Jul 28 02:16:48 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/Vivado_prj/func_sized'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-10] Creating and opening project '/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized'.
+INFO: [HLS 200-10] Adding design file 'func_sized.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'func_sized_test.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'result.golden.dat' to the project
+INFO: [HLS 200-10] Creating and opening solution '/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../func_sized_test.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw00.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Fri Jul 28 02:16:59 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/29266631690525019335913
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../func_sized.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw00.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Fri Jul 28 02:17:09 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/29267911690525030062434
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Files result.dat and result.golden.dat differ
+Test failed  !!!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'func_sized.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 3226 ; free virtual = 8333
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 3226 ; free virtual = 8333
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 3221 ; free virtual = 8333
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 3221 ; free virtual = 8333
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 3208 ; free virtual = 8320
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 3208 ; free virtual = 8320
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'func_sized' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'func_sized' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 45.04 seconds; current allocated memory: 101.510 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 101.557 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'func_sized' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'func_sized/x' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'func_sized/y' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'func_sized' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'func_sized'.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 101.677 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 330.66 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:28 ; elapsed = 00:00:46 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 3202 ; free virtual = 8320
+INFO: [VHDL 208-304] Generating VHDL RTL for func_sized.
+INFO: [VLOG 209-307] Generating Verilog RTL for func_sized.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/usr/cots/xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_func_sized.cpp
+   Compiling (apcc) func_sized.c_pre.c.tb.c
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw00.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Fri Jul 28 02:17:45 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/29270301690525065145644
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) func_sized_test.c_pre.c.tb.c
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw00.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Fri Jul 28 02:17:52 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/29271571690525072410795
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Files result.dat and result.golden.dat differ
+Test failed  !!!
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/usr/cots/xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_func_sized_top glbl -prj func_sized.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /usr/cots/xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s func_sized 
+Multi-threading is on. Using 4 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1/sim/verilog/func_sized.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_func_sized_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1/sim/verilog/func_sized.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module func_sized
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.func_sized
+Compiling module xil_defaultlib.apatb_func_sized_top
+Compiling module work.glbl
+Built simulation snapshot func_sized
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1/sim/verilog/xsim.dir/func_sized/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 28 02:18:04 2023...
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/func_sized/xsim_script.tcl
+# xsim {func_sized} -autoloadwcfg -tclbatch {func_sized.tcl}
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source func_sized.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 60 [n/a] @ "110000"
+// RTL Simulation : 1 / 60 [n/a] @ "118000"
+// RTL Simulation : 2 / 60 [n/a] @ "122000"
+// RTL Simulation : 3 / 60 [n/a] @ "126000"
+// RTL Simulation : 4 / 60 [n/a] @ "130000"
+// RTL Simulation : 5 / 60 [n/a] @ "134000"
+// RTL Simulation : 6 / 60 [n/a] @ "138000"
+// RTL Simulation : 7 / 60 [n/a] @ "142000"
+// RTL Simulation : 8 / 60 [n/a] @ "146000"
+// RTL Simulation : 9 / 60 [n/a] @ "150000"
+// RTL Simulation : 10 / 60 [n/a] @ "154000"
+// RTL Simulation : 11 / 60 [n/a] @ "158000"
+// RTL Simulation : 12 / 60 [n/a] @ "162000"
+// RTL Simulation : 13 / 60 [n/a] @ "166000"
+// RTL Simulation : 14 / 60 [n/a] @ "170000"
+// RTL Simulation : 15 / 60 [n/a] @ "174000"
+// RTL Simulation : 16 / 60 [n/a] @ "178000"
+// RTL Simulation : 17 / 60 [n/a] @ "182000"
+// RTL Simulation : 18 / 60 [n/a] @ "186000"
+// RTL Simulation : 19 / 60 [n/a] @ "190000"
+// RTL Simulation : 20 / 60 [n/a] @ "194000"
+// RTL Simulation : 21 / 60 [n/a] @ "198000"
+// RTL Simulation : 22 / 60 [n/a] @ "202000"
+// RTL Simulation : 23 / 60 [n/a] @ "206000"
+// RTL Simulation : 24 / 60 [n/a] @ "210000"
+// RTL Simulation : 25 / 60 [n/a] @ "214000"
+// RTL Simulation : 26 / 60 [n/a] @ "218000"
+// RTL Simulation : 27 / 60 [n/a] @ "222000"
+// RTL Simulation : 28 / 60 [n/a] @ "226000"
+// RTL Simulation : 29 / 60 [n/a] @ "230000"
+// RTL Simulation : 30 / 60 [n/a] @ "234000"
+// RTL Simulation : 31 / 60 [n/a] @ "238000"
+// RTL Simulation : 32 / 60 [n/a] @ "242000"
+// RTL Simulation : 33 / 60 [n/a] @ "246000"
+// RTL Simulation : 34 / 60 [n/a] @ "250000"
+// RTL Simulation : 35 / 60 [n/a] @ "254000"
+// RTL Simulation : 36 / 60 [n/a] @ "258000"
+// RTL Simulation : 37 / 60 [n/a] @ "262000"
+// RTL Simulation : 38 / 60 [n/a] @ "266000"
+// RTL Simulation : 39 / 60 [n/a] @ "270000"
+// RTL Simulation : 40 / 60 [n/a] @ "274000"
+// RTL Simulation : 41 / 60 [n/a] @ "278000"
+// RTL Simulation : 42 / 60 [n/a] @ "282000"
+// RTL Simulation : 43 / 60 [n/a] @ "286000"
+// RTL Simulation : 44 / 60 [n/a] @ "290000"
+// RTL Simulation : 45 / 60 [n/a] @ "294000"
+// RTL Simulation : 46 / 60 [n/a] @ "298000"
+// RTL Simulation : 47 / 60 [n/a] @ "302000"
+// RTL Simulation : 48 / 60 [n/a] @ "306000"
+// RTL Simulation : 49 / 60 [n/a] @ "310000"
+// RTL Simulation : 50 / 60 [n/a] @ "314000"
+// RTL Simulation : 51 / 60 [n/a] @ "318000"
+// RTL Simulation : 52 / 60 [n/a] @ "322000"
+// RTL Simulation : 53 / 60 [n/a] @ "326000"
+// RTL Simulation : 54 / 60 [n/a] @ "330000"
+// RTL Simulation : 55 / 60 [n/a] @ "334000"
+// RTL Simulation : 56 / 60 [n/a] @ "338000"
+// RTL Simulation : 57 / 60 [n/a] @ "342000"
+// RTL Simulation : 58 / 60 [n/a] @ "346000"
+// RTL Simulation : 59 / 60 [n/a] @ "350000"
+// RTL Simulation : 60 / 60 [n/a] @ "354000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 370 ns : File "/h/dnguye22/Documents/Vivado_prj/func_sized/proj_func_sized/solution1/sim/verilog/func_sized.autotb.v" Line 312
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Jul 28 02:18:20 2023...
+INFO: [COSIM 212-316] Starting C post checking ...
+Files result.dat and result.golden.dat differ
+Test failed  !!!
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
+INFO: [HLS 200-112] Total elapsed time: 93.64 seconds; peak allocated memory: 101.677 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Fri Jul 28 02:18:20 2023...

@@ -1,0 +1,144 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /usr/cots/xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw08.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Sat Jul 08 07:19:21 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/largermaps/types_global'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-10] Opening and resetting project '/h/dnguye22/Documents/largermaps/types_global/proj_types_global'.
+INFO: [HLS 200-10] Adding design file 'types_global.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'types_global_test.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'result.golden.dat' to the project
+INFO: [HLS 200-10] Opening and resetting solution '/h/dnguye22/Documents/largermaps/types_global/proj_types_global/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../types_global_test.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw08.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Sat Jul 08 07:19:26 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/largermaps/types_global/proj_types_global/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/28357861688815166583316
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../types_global.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw08.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Sat Jul 08 07:19:35 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/largermaps/types_global/proj_types_global/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/28359151688815175989701
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+mae = 0.00 
+Test passed 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'types_global.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 10101 ; free virtual = 14415
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 10101 ; free virtual = 14415
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 10100 ; free virtual = 14413
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 10100 ; free virtual = 14413
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 10087 ; free virtual = 14400
+INFO: [HLS 200-472] Inferring partial write operation for 'Aint' (types_global.c:103:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'Aout' (types_global.c:108:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 10087 ; free virtual = 14400
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'types_global' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'types_global' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 34.91 seconds; current allocated memory: 102.921 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 103.196 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'types_global' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'types_global/idx' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'types_global/Ain' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'types_global/Aint' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'types_global/Aout' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'types_global' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Global array 'Ain' will be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'Aint' will be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'Aout' will be exposed as RTL port.
+INFO: [SYN 201-210] Renamed object name 'types_global_dadd_64ns_64ns_64_5_full_dsp_1' to 'types_global_daddbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'types_global_dmul_64ns_64ns_64_5_max_dsp_1' to 'types_global_dmulcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'types_global_daddbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'types_global_dmulcud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'types_global'.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 103.714 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 300.30 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1103.988 ; gain = 459.035 ; free physical = 10085 ; free virtual = 14399
+INFO: [VHDL 208-304] Generating VHDL RTL for types_global.
+INFO: [VLOG 209-307] Generating Verilog RTL for types_global.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/usr/cots/xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_types_global.cpp
+   Compiling (apcc) types_global.c_pre.c.tb.c
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw08.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Sat Jul 08 07:20:08 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/largermaps/types_global/proj_types_global/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/28361321688815208157934
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) types_global_test.c_pre.c.tb.c
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw08.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Sat Jul 08 07:20:15 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/largermaps/types_global/proj_types_global/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/28362601688815215940225
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+mae = 0.00 
+Test passed 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from '/usr/cots/xilinx/Vivado/2019.2/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_rfs.vhd' to '/h/dnguye22/Documents/largermaps/types_global/proj_types_global/solution1/.autopilot/db/ip_tmp/prj.srcs/sources_1/ip/types_global_ap_dadd_3_full_dsp_64/hdl/floating_point_v7_1_rfs.vhd'.
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'types_global_ap_dadd_3_full_dsp_64'. Failed to generate 'Simulation' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+ ERROR: "Run Vivado failed"
+ ERROR: "Run Vivado failed"
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+11
+    while executing
+"source run_hls.tcl"
+    invoked from within
+"hls::main run_hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
+INFO: [HLS 200-112] Total elapsed time: 92.6 seconds; peak allocated memory: 103.714 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sat Jul  8 07:20:53 2023...

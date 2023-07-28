@@ -1,0 +1,7 @@
+Types Global Standard,Basic arithmetic with the same types,,,Adjacent array elements summation,,
+Types ,char,short,int,long ,float,double
+Latency,x,898,1154,1154,3714,3970
+DSP,x,0,0,0,5,11
+FF,x,89,97,202,587,1234
+LUT,x,252,269,547,601,1118
+Mean Absolute Error (MAE) ,x,0,0,0,0,0

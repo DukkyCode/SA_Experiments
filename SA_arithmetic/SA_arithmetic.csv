@@ -1,0 +1,6 @@
+SA_arithmetic,Types = int,
+Experiment,pragma on with loop 1,pragma off
+Latency,782,742
+DSP,3,3
+FF,560,5557
+LUT,621,737

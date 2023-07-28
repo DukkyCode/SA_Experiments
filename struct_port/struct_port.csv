@@ -1,0 +1,7 @@
+Types Global Standard,Struct members with the manipulation of three struct port with the same types,,,,,
+Types ,char,short,int,long ,float,double
+Latency,19,19,19,19,71,59
+DSP,0,0,0,0,2,3
+FF,63,103,183,343,503,816
+LUT,174,206,270,398,487,953
+Mean Absolute Error (MAE) ,0,0,0,0,0,0

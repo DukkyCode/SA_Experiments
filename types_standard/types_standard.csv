@@ -1,0 +1,12 @@
+Types Global Standard,Basic arithmetic with the same types,,,
+Types ,char,short,int,long long
+Latency,11,19,35,67
+DSP,0,1,3,10
+FF,224,424,824,1988
+LUT,186,301,693,1489
+,,,,
+Mean Absolute Error (MAE) ,,,,
+out1 - multiplication,170,0,0,0
+out2 - addition,0,0,0,0
+out3 - subtraction,54,0,0,0
+out4 - Modulo Expression,0,0,0,0

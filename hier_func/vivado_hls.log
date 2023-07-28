@@ -1,0 +1,89 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /usr/cots/xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw03.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Tue Jul 11 03:32:29 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/Vivado_prj/examples/coding/hier_func'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-10] Opening and resetting project '/h/dnguye22/Documents/Vivado_prj/examples/coding/hier_func/proj_hier_func'.
+INFO: [HLS 200-10] Adding design file 'hier_func.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'hier_func_test.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-10] Opening and resetting solution '/h/dnguye22/Documents/Vivado_prj/examples/coding/hier_func/proj_hier_func/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../hier_func_test.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw03.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Tue Jul 11 03:32:34 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/Vivado_prj/examples/coding/hier_func/proj_hier_func/solution1/csim/build'
+../../../../hier_func_test.c:131:35: warning: incompatible pointer types passing 'int *' to parameter of type 'dout_t *' (aka 'float *') [-Wincompatible-pointer-types]
+    hier_func(a_actual, b_actual, &c_actual, &d_actual);
+                                  ^~~~~~~~~
+../../../../hier_func.h:104:42: note: passing argument to parameter 'C' here
+void hier_func(din_t A, din_t B, dout_t *C, dout_t *D);
+                                         ^
+../../../../hier_func_test.c:131:46: warning: incompatible pointer types passing 'int *' to parameter of type 'dout_t *' (aka 'float *') [-Wincompatible-pointer-types]
+    hier_func(a_actual, b_actual, &c_actual, &d_actual);
+                                             ^~~~~~~~~
+../../../../hier_func.h:104:53: note: passing argument to parameter 'D' here
+void hier_func(din_t A, din_t B, dout_t *C, dout_t *D);
+                                                    ^
+2 warnings generated.
+../../../../hier_func_test.c:131:35: warning: incompatible pointer types passing 'int *' to parameter of type 'dout_t *' (aka 'float *') [-Wincompatible-pointer-types]
+    hier_func(a_actual, b_actual, &c_actual, &d_actual);
+                                  ^~~~~~~~~
+../../../../hier_func.h:104:42: note: passing argument to parameter 'C' here
+void hier_func(din_t A, din_t B, dout_t *C, dout_t *D);
+                                         ^
+../../../../hier_func_test.c:131:46: warning: incompatible pointer types passing 'int *' to parameter of type 'dout_t *' (aka 'float *') [-Wincompatible-pointer-types]
+    hier_func(a_actual, b_actual, &c_actual, &d_actual);
+                                             ^~~~~~~~~
+../../../../hier_func.h:104:53: note: passing argument to parameter 'D' here
+void hier_func(din_t A, din_t B, dout_t *C, dout_t *D);
+                                                    ^
+2 warnings generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/21614391689060754871886
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../hier_func.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/usr/cots/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dnguye22' on host 'vm-hw03.eecs.tufts.edu' (Linux_x86_64 version 4.18.0-477.10.1.el8_8.x86_64) on Tue Jul 11 03:32:45 EDT 2023
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.8 (Ootpa)"
+INFO: [HLS 200-10] In directory '/h/dnguye22/Documents/Vivado_prj/examples/coding/hier_func/proj_hier_func/solution1/csim/build'
+../../../../hier_func.c:57:18: error: invalid operands to binary expression ('dint_t' (aka 'float') and 'int')
+    *outA = *in1 >> 1;
+            ~~~~ ^  ~
+../../../../hier_func.c:58:18: error: invalid operands to binary expression ('dint_t' (aka 'float') and 'int')
+    *outB = *in2 >> 2;
+            ~~~~ ^  ~
+2 errors generated.
+ERROR: [APCC 202-10] clang compile failed: child process exited abnormally
+ERROR: [APCC 202-1] ProcessSources failed
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dnguye22/21615671689060765102070
+ERROR: [APCC 202-1] APCC failed.
+make: *** [csim.mk:88: obj/hier_func.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+4
+    while executing
+"source run_hls.tcl"
+    invoked from within
+"hls::main run_hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
+INFO: [Common 17-206] Exiting vivado_hls at Tue Jul 11 03:32:47 2023...

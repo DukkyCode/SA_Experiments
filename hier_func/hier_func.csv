@@ -1,0 +1,6 @@
+Types Global Standard,Hierarchy functions ,,,,,
+Types ,char,short,int,long ,float,double
+Latency,0,0,0,0,,
+DSP,0,0,0,0,,
+FF,0,0,0,0,,
+LUT,16,32,64,128,,

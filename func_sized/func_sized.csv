@@ -1,0 +1,6 @@
+Types Global Standard,Arbitrary integer types that can affect the hardware resources,,,,,,,,
+Types ,char,short,int,long ,float,double,int12&24,int12&12,int30&30
+Latency,0,0,0,2,8,9,0,0,0
+DSP,0,1,3,10,3,8,0,1,3
+FF,0,0,0,365,384,680,1,0,0
+LUT,40,0,20,199,839,1242,0,0,30
